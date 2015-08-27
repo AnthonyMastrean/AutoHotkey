@@ -13,7 +13,9 @@ task :compile => TARGETS
 
 SCRIPTS.zip(ICONS, TARGETS) do |script, icon, target|
   file target => [script] do
-    system("ahk2exe /in \"#{script}\" /out \"#{target}\" /icon \"#{icon}\"")
+    File.exist?(icon) \
+        ? system("ahk2exe /in \"#{script}\" /out \"#{target}\" /icon \"#{icon}\"") \
+        : system("ahk2exe /in \"#{script}\" /out \"#{target}\"")
     system("mpress -q \"#{target}\"")
   end
 end
