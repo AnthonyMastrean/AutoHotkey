@@ -6,7 +6,7 @@ SetWorkingDir, %A_ScriptDir%
 FileInstall, wincommandpaste.ico, wincommandpaste.ico
 
 Menu, Tray, Icon, wincommandpaste.ico
-Menu, Tray, Tip, Paste in any console window with CTRL + V
+Menu, Tray, Tip, Windows Command Paste
 
 #IfWinActive ahk_class ConsoleWindowClass
   ^v::Send !{Space}EP

@@ -6,7 +6,7 @@ SetWorkingDir, %A_ScriptDir%
 FileInstall, dtksneak.ico, dtksneak.ico
 
 Menu, Tray, Icon, dtksneak.ico
-Menu, Tray, Tip, Watching for the DTK SDK dialog...
+Menu, Tray, Tip, Waiting for the DTK dialog...
 
 Loop 
 {
