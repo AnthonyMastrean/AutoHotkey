@@ -9,5 +9,5 @@ Menu, Tray, Icon, veryseriousbutton-listener.ico
 Menu, Tray, Tip, Very Serious Button
 
 :*:285Hp1Py2N0Z6k6ow3XLb6ejY::
-  Shutdown, 1
+  Shutdown, 5
   return
